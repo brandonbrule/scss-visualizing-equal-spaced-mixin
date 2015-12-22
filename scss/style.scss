@@ -15,24 +15,6 @@
 // Container Width - Total Margin Spacing
 // Remaining Width / Total Number of Columns
 
-// -- Clearfix -- //
-// @extend .clearfix
-.clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-
-
-// -- Equal Spaced Columns -- //
-// Number of Columns - First Column
-// Remaining Number of Columns * Margin Spacing
-// Container Width - Total Margin Spacing
-// Remaining Width / Total Number of Columns
-
 @mixin equalSpaced( $num_of_cols, $spacing, $container_width  ){
  
   width: ( $container_width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
